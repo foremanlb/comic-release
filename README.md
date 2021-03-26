@@ -40,9 +40,10 @@ Sample:
 {
     "id": "rectIiFqF3siwYJ4h",
     "fields": {
-        "Comics": "2021-03-26",
+        "Notes": "Plot of comic, if known,\nOtherwise, plot unkown.",
         "Name": "Batman #106",
-        "Notes": "Plot of comic, if known,\nOtherwise, plot unkown."
+        "Comics": "2021-03-26",
+        "Publisher": "DC"
     },
     "createdTime": "2021-03-26T15:07:09.000Z"
 }
