@@ -34,6 +34,8 @@ Comic release will be a single website dedicated to release schedules of comic b
 
 https://api.airtable.com/v0/appNAGArCdz8dOUQm/Release
 
+I will be accessing the API and using it to populate my items either in a list by publisher or in a calendar format.
+
 Sample:
 
 ```
