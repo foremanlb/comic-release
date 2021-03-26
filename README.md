@@ -6,25 +6,29 @@ Comic release will be a single website dedicated to release schedules of comic b
 
 ## Wireframes
 
-![wireframe](https://github.com/foremanlb/project-Gotham/blob/d6b1d039d01eb48e1abe5a6c0ee8f331eaadc18c/Assets/Project2-Home%20Page.jpeg)
+![wireframe](https://github.com/foremanlb/comic-release/blob/3c158455b8fe3931c8cf130f338de60be2f6d0b7/src/assets/Project2-Home%20Page.jpeg)
 
-![wireframe](https://github.com/foremanlb/project-Gotham/blob/d9c254384fbf10a7d5b14177351470eddb87daa7/Assets/Project2-Form.jpeg)
+![wireframe](https://github.com/foremanlb/comic-release/blob/3c158455b8fe3931c8cf130f338de60be2f6d0b7/src/assets/Project2-items%20List.jpeg)
 
-![wireframe](https://github.com/foremanlb/project-Gotham/blob/d9c254384fbf10a7d5b14177351470eddb87daa7/Assets/Project2-items%20List.jpeg)
+![wireframe](https://github.com/foremanlb/comic-release/blob/3c158455b8fe3931c8cf130f338de60be2f6d0b7/src/assets/Project2-Month.jpeg)
 
-![wireframe](https://github.com/foremanlb/project-Gotham/blob/d9c254384fbf10a7d5b14177351470eddb87daa7/Assets/Project2-Sample%20Character.jpeg)
+![wireframe](https://github.com/foremanlb/comic-release/blob/3c158455b8fe3931c8cf130f338de60be2f6d0b7/src/assets/Project2-Day.jpeg)
 
-![wireframe](https://github.com/foremanlb/project-Gotham/blob/d9c254384fbf10a7d5b14177351470eddb87daa7/Assets/Project2-Mobile%20Home.jpeg)
+![wireframe](https://github.com/foremanlb/comic-release/blob/3c158455b8fe3931c8cf130f338de60be2f6d0b7/src/assets/Project2-Form.jpeg)
 
-![wireframe](https://github.com/foremanlb/project-Gotham/blob/d9c254384fbf10a7d5b14177351470eddb87daa7/Assets/Project2-Mobile%20Form.jpeg)
+![wireframe](https://github.com/foremanlb/comic-release/blob/3c158455b8fe3931c8cf130f338de60be2f6d0b7/src/assets/Project2-Mobile%20Home.jpeg)
 
-![wireframe](https://github.com/foremanlb/project-Gotham/blob/d9c254384fbf10a7d5b14177351470eddb87daa7/Assets/Project2-Mobile%20items.jpeg)
+![wireframe](https://github.com/foremanlb/comic-release/blob/3c158455b8fe3931c8cf130f338de60be2f6d0b7/src/assets/Project2-Mobile%20items.jpeg)
 
-![wireframe](https://github.com/foremanlb/project-Gotham/blob/d9c254384fbf10a7d5b14177351470eddb87daa7/Assets/Project2-Mobile%20Sample.jpeg)
+![wireframe](https://github.com/foremanlb/comic-release/blob/3c158455b8fe3931c8cf130f338de60be2f6d0b7/src/assets/Project2-Mobile%20Month.jpeg)
+
+![wireframe](https://github.com/foremanlb/comic-release/blob/3c158455b8fe3931c8cf130f338de60be2f6d0b7/src/assets/Project2-Mobile%20Day.jpeg)
+
+![wireframe](https://github.com/foremanlb/comic-release/blob/3c158455b8fe3931c8cf130f338de60be2f6d0b7/src/assets/Project2-Mobile%20Form.jpeg)
 
 ## Component Hierarchy
 
-![hierarchy](https://github.com/foremanlb/project-Gotham/blob/1ad076af3d3edc6baae5807ba77860dca8ad0d75/Assets/components.jpeg)
+![hierarchy](https://github.com/foremanlb/comic-release/blob/3c158455b8fe3931c8cf130f338de60be2f6d0b7/src/assets/components.jpeg)
 
 ## Api and Data Sample
 
