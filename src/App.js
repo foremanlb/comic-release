@@ -2,6 +2,7 @@ import './App.css';
 import { useState, useEffect } from 'react'
 import { Route } from 'react-router-dom'
 import {baseURL, config} from './services/index'
+import axios from 'axios';
 import NavBar from './components/NavBar'
 import About from './components/About'
 import Contact from './components/Contact'
@@ -10,7 +11,7 @@ import Form from './components/Form'
 import Month from './components/Month'
 import Publisher from './components/Publisher'
 import Footer from './components/Footer'
-import axios from 'axios';
+import Links from './components/Links'
 
 function App() {
   const [comics, setComics] = useState([])
@@ -42,6 +43,9 @@ function App() {
       </Route>
       <Route path='/form'>
         <Form />
+      </Route>
+      <Route path='/links'>
+        <Links />
       </Route>
       <Footer />
     </div>
