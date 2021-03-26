@@ -1,6 +1,7 @@
 import './App.css';
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Route } from 'react-router-dom'
+import {baseURL, config} from './services/index'
 import NavBar from './components/NavBar'
 import About from './components/About'
 import Contact from './components/Contact'
@@ -8,8 +9,21 @@ import Day from './components/Day'
 import Form from './components/Form'
 import Month from './components/Month'
 import Publisher from './components/Publisher'
+import Footer from './components/Footer'
+import axios from 'axios';
 
 function App() {
+  const [comics, setComics] = useState([])
+
+  useEffect(() => {
+    getData()
+  }, [])
+
+  async function getData() {
+    const resp = await axios.get(baseURL, config)
+    console.log(resp.data.records
+  )
+  }
 
   return (
     <div className="App">
@@ -29,6 +43,7 @@ function App() {
       <Route path='/form'>
         <Form />
       </Route>
+      <Footer />
     </div>
   );
 }
