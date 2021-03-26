@@ -32,48 +32,19 @@ Comic release will be a single website dedicated to release schedules of comic b
 
 ## Api and Data Sample
 
-https://airtable.com/tblgUiwVqYWGirv6G/viwNv3FViU7BUe1cy?blocks=hide
+https://api.airtable.com/v0/appNAGArCdz8dOUQm/Release
 
 Sample:
 
 ```
 {
-    "id": "rec4hH8lMYKuP1WP3",
+    "id": "rectIiFqF3siwYJ4h",
     "fields": {
-        "Photo": [
-            {
-                "id": "atteGLGVCxDA8GZl3",
-                "url": "https://dl.airtable.com/.attachments/62e40bfd59aaf9c47ae719dd882b82dc/0cf174ac/batman.jpeg",
-                "filename": "batman.jpeg",
-                "size": 228438,
-                "type": "image/jpeg",
-                "thumbnails": {
-                    "small": {
-                        "url": "https://dl.airtable.com/.attachmentThumbnails/4a2d3275fb0dbc283ead8a624e9ffe46/cf9e1093",
-                        "width": 64,
-                        "height": 36
-                    },
-                    "large": {
-                        "url": "https://dl.airtable.com/.attachmentThumbnails/cb19faee583646f713a7dc94f52e8b5c/ecb46588",
-                        "width": 910,
-                        "height": 512
-                    },
-                    "full": {
-                        "url": "https://dl.airtable.com/.attachmentThumbnails/f0bbf32e7ebd7430c9af08423bbe6f69/3f71055d",
-                        "width": 3000,
-                        "height": 3000
-                    }
-                }
-            }
-        ],
-        "Name": "Bruce Wayne",
-        "Alias": "Batman",
-        "Age": 43,
-        "Skills": "enim praesent elementum facilisis leo",
-        "Background": "enim praesent elementum facilisis leo",
-        "Characteristics": "enim praesent elementum facilisis leo"
+        "Comics": "2021-03-26",
+        "Name": "Batman #106",
+        "Notes": "Plot of comic, if known,\nOtherwise, plot unkown."
     },
-    "createdTime": "2021-03-25T01:42:51.000Z"
+    "createdTime": "2021-03-26T15:07:09.000Z"
 }
 
 ```
@@ -84,21 +55,19 @@ Sample:
 
 - Clear and concise homepage with links to the rest of the website features.
 
-- Get details about characters and locations and display into appropriate sections.
+- Links based on Publisher.
 
-- Utilize form to allow users to add their own items to the site to allow for growth of ideas.
-
-- Pages for Bat Family, Super Villains, Criminals, Citizens, and Other Heroes.
+- Utilize form to allow users to add their own items to the site.
 
 ### PostMVP
 
 - Integrate a search bar to allow for faster navigation of items.
 
-- Integrate an image uploader into the form so that users can add pictures for their items.
+- Integrate a Tag system for each item to allow for better searches.
 
 - Add ability to Edit items.
 
-- Add Locations and Beyond.
+- Add variables for variant covers.
 
 ## Project Schedule
 
