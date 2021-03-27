@@ -22,8 +22,7 @@ function App() {
 
   async function getData() {
     const resp = await axios.get(baseURL, config)
-    console.log(resp.data.records
-  )
+    console.log(resp.data.records)
   }
 
   return (
