@@ -15,17 +15,24 @@ import Links from './components/Links'
 
 function App() {
   const [comics, setComics] = useState([])
-
+  const [isLoading, setIsLoading] = useState(true)
+  
   useEffect(() => {
     getData()
   }, [])
 
   async function getData() {
     const resp = await axios.get(baseURL, config)
+    setComics(resp.data.records)
+    setIsLoading(false)
     console.log(resp.data.records)
+
   }
 
   return (
+    isLoading ?
+      <div>Loading...</div> :
+      <>
     <div className="App">
       <h1>Release the Comics!</h1>
       <NavBar />
@@ -34,7 +41,7 @@ function App() {
         <Publisher />
       </Route>
       <Route path='/month'>
-        <Month />
+        <Month comics={comics}/>
       </Route>
       <Route path='/day/:Date'></Route>
       <Route path='/about'>
@@ -47,7 +54,8 @@ function App() {
         <Links />
       </Route>
       <Footer />
-    </div>
+        </div>
+        </>
   );
 }
 

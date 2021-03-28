@@ -11,7 +11,7 @@ export default function Footer() {
         <div>Add Release</div>
       </Link>
       <Link to='/links'>
-        <div>Publisher Sites</div>
+        <div>Contact</div>
       </Link>
       <a
         href='https://github.com/foremanlb/comic-release'

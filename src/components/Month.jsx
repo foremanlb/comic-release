@@ -1,24 +1,40 @@
 import React from 'react'
 import Calendar from 'react-calendar'
-import { useState, useEffect } from 'react'
-import {Link, useHistory} from 'react-router-dom'
+import { useState,} from 'react'
+import {useHistory} from 'react-router-dom'
 
-export default function Month() {
+export default function Month(props) {
   const [value, onChange] = useState(new Date())
-  const [dayLink, setDayLink] = useState('')
+  const [day, setDay] = useState('')
+  const [dayFill, setDayFill] = useState('')
   let history = useHistory()
+  const comics = props.comics
+
 
   function clickDay(value, event) {
-    const day = value.toISOString()
-    setDayLink(day.slice(0, 10))
+    const date = value.toISOString()
+    setDay(date.slice(0, 10))
   }
   
   function checkDay() {
-    if (dayLink === '') {
+    if (day === '') {
       alert('Select Day First')
     } else {
-      history.push(`/day/${dayLink}`)
+      history.push(`/day/${day}`)
     }
+  }
+
+  function fillDay(date) {
+    console.log(date)
+    // const date = value.toISOString()
+    // setDayFill(date.slice(0, 10))
+    comics.map((comic) => {
+      if (comic.Date === dayFill) {
+        return <div>{comic.Title}</div>
+      } else {
+        return <></>
+      }
+    })
   }
 
   return (
@@ -27,7 +43,9 @@ export default function Month() {
         onChange={onChange}
         value={value}
         onClickDay={clickDay}
+        tileContent={fillDay(date)}
       />
+      <div>{day.slice(5)}</div>
       <button onClick={checkDay}>See Day</button>
     </div>
   )
