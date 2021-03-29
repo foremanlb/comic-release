@@ -34,6 +34,7 @@ export default function Form(props) {
       <input
         type='text'
         hidden={hidden}></input>
+      <input type='number'></input>
     </form>
   )
 }
