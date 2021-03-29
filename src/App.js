@@ -27,7 +27,7 @@ function App() {
     const resp = await axios.get(baseURL, config)
     setComics(resp.data.records)
     setIsLoading(false)
-    console.log(resp.data.records)
+    // console.log(resp.data.records)
 
   }
 
