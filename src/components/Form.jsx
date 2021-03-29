@@ -1,8 +1,9 @@
 import React from 'react'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Sort from './Sort'
 import 'react-modern-calendar-datepicker/lib/DatePicker.css';
 import DatePicker from 'react-modern-calendar-datepicker';
+import axios from 'axios'
 
 export default function Form(props) {
   const [selectedDay, setSelectedDay] = useState(null)
@@ -16,6 +17,15 @@ export default function Form(props) {
     Publisher: '',
     Issue:0,
   })
+  const today= new Date()
+
+  useEffect(() => {
+    setSelectedDay({
+      day: today.getDate(),
+      month: (today.getMonth() + 1),
+      year: today.getFullYear(),
+    })
+  }, [])
 
   function newSelect(e) {
     setPublisher((prevState) => e.target.value)
