@@ -1,18 +1,20 @@
 import React from 'react'
-import {useState, useEffect} from 'react'
+import { useState, useEffect } from 'react'
 
-export default function DC(props) {
-  const comics = props.comics
+
+export default function Sort(props) {
   const [titles, setTitles] = useState([])
+  const comics = props.comics
+  const publisher = props.publisher
 
   useEffect(() => {
-    getComics()
-  }, [])
+    getTitles()
+  }, [publisher])
 
-  function getComics() {
+  function getTitles() {
     const newArr = []
     comics.map((comic) => {
-      if (comic.fields.Publisher === 'Marvel') {
+      if (comic.fields.Publisher === publisher) {
         newArr.push(comic.fields.Title)
       }
       const unique = [...new Set(newArr)]
@@ -20,12 +22,13 @@ export default function DC(props) {
       return null
     })
   }
-  
+
+
   return (
     <>
       {titles.map((title) => {
-        return <h4 key={title}>{title}</h4>
+        return <option value='title'>{title}</option>
       })}
-    </>
+      </>
   )
 }

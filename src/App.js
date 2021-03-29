@@ -35,35 +35,35 @@ function App() {
     isLoading ?
       <div>Loading...</div> :
       <>
-    <div className="App">
-      <h1>Release the Comics!</h1>
-      <NavBar />
-      <Route exact path='/'></Route>
-      <Route path='/marvel'>
-        <Marvel comics={comics}/>
-      </Route>
-      <Route path='/dc'>
-        <DC comics={comics}/>
-      </Route>
-      <Route path='/indie'>
-        <Indie comics={comics}/>
-      </Route>
-      <Route path='/month'>
-        <Month comics={comics}/>
-      </Route>
-      <Route path='/day/:Date'></Route>
-      <Route path='/about'>
-        <About />
-      </Route>
-      <Route path='/form'>
-        <Form />
-      </Route>
-      <Route path='/links'>
-        <Links />
-      </Route>
-      <Footer />
+        <div className="App">
+        <h1>Release the Comics!</h1>
+        <NavBar />
+        <Route exact path='/'></Route>
+        <Route path='/marvel'>
+          <Marvel comics={comics}/>
+        </Route>
+        <Route path='/dc'>
+          <DC comics={comics}/>
+        </Route>
+        <Route path='/indie'>
+          <Indie comics={comics}/>
+        </Route>
+        <Route path='/month'>
+          <Month comics={comics}/>
+        </Route>
+        <Route path='/day/:Date'></Route>
+        <Route path='/about'>
+          <About />
+        </Route>
+        <Route path='/form'>
+          <Form comics={comics}/>
+        </Route>
+        <Route path='/links'>
+          <Links />
+        </Route>
+        <Footer />
         </div>
-        </>
+      </>
   );
 }
 
