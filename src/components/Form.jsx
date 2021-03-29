@@ -4,6 +4,8 @@ import Sort from './Sort'
 import 'react-modern-calendar-datepicker/lib/DatePicker.css';
 import DatePicker from 'react-modern-calendar-datepicker';
 import axios from 'axios'
+import {baseURL, config} from '../services/index'
+import {useHistory} from 'react-router-dom'
 
 export default function Form(props) {
   const [selectedDay, setSelectedDay] = useState(null)
@@ -17,7 +19,8 @@ export default function Form(props) {
     Publisher: '',
     Issue:0,
   })
-  const today= new Date()
+  const today = new Date()
+  const history = useHistory()
 
   useEffect(() => {
     setSelectedDay({
@@ -45,15 +48,29 @@ export default function Form(props) {
       return {...prevState, [name]: value}
     })
   }
+
+  function handleChangeNumber(e) {
+    let { value, name } = e.target
+    setNewComic((prevState) => {
+      return {...prevState, [name]: parseInt(value)}
+    })
+  }
   
   function changeDate() {
     setNewComic((prevState) => {
-      return {...prevState, Date: `${selectedDay.year}/${selectedDay.month}/${selectedDay.day}`}
+      return {...prevState, Date: `${selectedDay.year}-${selectedDay.month}-${selectedDay.day}`}
     })
   }
 
+  async function handleSubmit(e) {
+    e.preventDefault()
+    await axios.post(baseURL, { fields: newComic }, config)
+    alert('Thank You for Submitting')
+    history.push('/')
+  }
+
   return (
-    <form>
+    <form onSubmit={handleSubmit}>
       <select
         onChange={(e) => {
           newSelect(e)
@@ -78,7 +95,7 @@ export default function Form(props) {
         hidden={hidden} name='Title'></input>
       <input
         type='number'
-        onChange={handleChange}
+        onChange={handleChangeNumber}
         placeholder='Issue'
         name='Issue'></input>
       <DatePicker
