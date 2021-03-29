@@ -24,18 +24,18 @@ export default function Month(props) {
     }
   }
 
-  function fillDay(date) {
-    console.log(date)
-    // const date = value.toISOString()
-    // setDayFill(date.slice(0, 10))
-    comics.map((comic) => {
-      if (comic.Date === dayFill) {
-        return <div>{comic.Title}</div>
-      } else {
-        return <></>
-      }
-    })
-  }
+  // function fillDay(date) {
+  //   console.log(date)
+  //   // const date = value.toISOString()
+  //   // setDayFill(date.slice(0, 10))
+  //   comics.map((comic) => {
+  //     if (comic.Date === dayFill) {
+  //       return <div>{comic.Title}</div>
+  //     } else {
+  //       return <></>
+  //     }
+  //   })
+  // }
 
   return (
     <div>
@@ -43,7 +43,7 @@ export default function Month(props) {
         onChange={onChange}
         value={value}
         onClickDay={clickDay}
-        tileContent={fillDay(date)}
+        // tileContent={fillDay(date)}
       />
       <div>{day.slice(5)}</div>
       <button onClick={checkDay}>See Day</button>

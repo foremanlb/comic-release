@@ -9,7 +9,9 @@ import Contact from './components/Contact'
 import Day from './components/Day'
 import Form from './components/Form'
 import Month from './components/Month'
-import Publisher from './components/Publisher'
+import Marvel from './components/Marvel'
+import DC from './components/DC'
+import Indie from './components/Indie'
 import Footer from './components/Footer'
 import Links from './components/Links'
 
@@ -37,8 +39,14 @@ function App() {
       <h1>Release the Comics!</h1>
       <NavBar />
       <Route exact path='/'></Route>
-      <Route path='/publisher/:Publisher'>
-        <Publisher />
+      <Route path='/marvel'>
+        <Marvel comics={comics}/>
+      </Route>
+      <Route path='/dc'>
+        <DC comics={comics}/>
+      </Route>
+      <Route path='/indie'>
+        <Indie comics={comics}/>
       </Route>
       <Route path='/month'>
         <Month comics={comics}/>

@@ -7,13 +7,13 @@ export default function NavBar() {
       <Link to='/'>
         <div>Home</div>
       </Link>
-      <Link to='/publisher/marvel'>
+      <Link to='/marvel'>
       <div>Marvel</div>
       </Link>
-      <Link to='/publisher/dc'>
+      <Link to='/dc'>
       <div>DC</div>
       </Link>
-      <Link to='/publisher/indie'>
+      <Link to='/indie'>
       <div>Indie</div>
       </Link>
       <Link to='/month'>
