@@ -14,6 +14,8 @@ import DC from './components/DC'
 import Indie from './components/Indie'
 import Footer from './components/Footer'
 import Links from './components/Links'
+import 'react-modern-calendar-datepicker/lib/DatePicker.css';
+import DatePicker from 'react-modern-calendar-datepicker';
 
 function App() {
   const [comics, setComics] = useState([])
