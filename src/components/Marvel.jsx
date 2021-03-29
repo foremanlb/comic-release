@@ -1,21 +1,30 @@
 import React from 'react'
+import {useState, useEffect} from 'react'
 
-export default function Marvel(props) {
+export default function DC(props) {
   const comics = props.comics
+  const [titles, setTitles] = useState([])
+
+  useEffect(() => {
+    getComics()
+  }, [])
+
+  function getComics() {
+    const newArr = []
+    comics.map((comic) => {
+      if (comic.fields.Publisher === 'Marvel') {
+        newArr.push(comic.fields.Title)
+      }
+      const unique = [...new Set(newArr)]
+      setTitles(unique)
+    })
+  }
   
   return (
     <>
-      {comics.map((comic) => {
-        if (comic.fields.Publisher === 'Marvel') {
-          return <h4 key={comic.id}>
-            {comic.fields.Title}
-          </h4>
-        } else {
-          return null
-        }
+      {titles.map((title) => {
+        return <h4 key={title}>{title}</h4>
       })}
-      </>
+    </>
   )
-
-
 }

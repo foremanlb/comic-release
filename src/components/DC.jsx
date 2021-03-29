@@ -9,7 +9,6 @@ export default function DC(props) {
     getComics()
   }, [])
 
-
   function getComics() {
     const newArr = []
     comics.map((comic) => {
@@ -24,15 +23,8 @@ export default function DC(props) {
   return (
     <>
       {titles.map((title) => {
-        
-          return <h4 key={title}>
-            {title}
-          </h4>
-      
+        return <h4 key={title}>{title}</h4>
       })}
-      
-      </>
+    </>
   )
-
-
 }
