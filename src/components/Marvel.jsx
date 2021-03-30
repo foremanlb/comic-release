@@ -18,7 +18,6 @@ export default function DC(props) {
       }
       const unique = [...new Set(newArr)]
       setTitles(unique)
-      return null
     })
   }
   
