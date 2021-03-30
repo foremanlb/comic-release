@@ -9,6 +9,7 @@ export default function Day(props) {
 
   return (
     <div>
+      <h3>Releases for {date.Date.slice(5)}</h3>
       {comics.map((comic) => {
         if (comic.fields.Date === date.Date) {
           const release = comic.fields.Date
@@ -22,8 +23,10 @@ export default function Day(props) {
               <p>{comic.fields.Plot}</p>
               <p>Release Date{newDate[1]}/{newDate[2]}/{newDate[0]}</p>
             </div>
-          )}
+          )
+        }
       })}
+      <h3>Try Another Day</h3>
     </div>
   )
 }
