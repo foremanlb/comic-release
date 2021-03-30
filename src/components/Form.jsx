@@ -76,7 +76,8 @@ export default function Form(props) {
           newSelect(e)
           handleChange(e)
         }}
-        name='Publisher'>
+        name='Publisher'
+        required>
         <option value=''>Publisher</option>
         <option value='Marvel'>Marvel</option>
         <option value='DC'>DC</option>
@@ -86,18 +87,22 @@ export default function Form(props) {
       <select onChange={(e) => {
         hiddenInput(e)
         handleChange(e)
-      }} name='Title'>
+      }} name='Title'
+        required>
         <Sort comics={comics} publisher={publisher}/>
       </select>
       <input
         type='text'
         onChange={handleChange}
-        hidden={hidden} name='Title'></input>
+        hidden={hidden}
+        name='Title'
+        required></input>
       <input
         type='number'
         onChange={handleChangeNumber}
         placeholder='Issue'
-        name='Issue'></input>
+        name='Issue'
+        required></input>
       <DatePicker
         value={selectedDay}
         onChange={(e) => {
@@ -106,12 +111,13 @@ export default function Form(props) {
         }}
         inputPlaceholder="Select a day"
         name='Date'
-        />
+        required/>
       <textarea
         rows='10'
         cols='30'
         name='Plot'
-        onChange={handleChange}></textarea>
+        onChange={handleChange}
+        required></textarea>
       <button type='submit'>Submit</button>
     </form>
   )
