@@ -1,0 +1,17 @@
+.nav {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  padding: 0;
+}
+
+li {
+  color: black;
+}
+
+Link {
+  text-decoration: none;
+}
+
+.navDiv {
+}
