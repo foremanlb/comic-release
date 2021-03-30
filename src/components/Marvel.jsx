@@ -1,5 +1,6 @@
 import React from 'react'
-import {useState, useEffect} from 'react'
+import { useState, useEffect } from 'react'
+import {Link} from 'react-router-dom'
 
 export default function DC(props) {
   const comics = props.comics
@@ -24,8 +25,11 @@ export default function DC(props) {
   return (
     <>
       {titles.map((title) => {
-        return <h4 key={title}>{title}</h4>
-      })}
+        return (
+          <Link to={`/comics/${title}`}>
+            <h4 key={title}>{title}</h4>
+          </Link>
+      )})}
     </>
   )
 }
