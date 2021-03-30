@@ -19,7 +19,7 @@ export default function Month(props) {
     if (day === '') {
       alert('Select Day First')
     } else {
-      history.push(`/day/${day}`)
+      history.push(`/month/${day}`)
     }
   }
 

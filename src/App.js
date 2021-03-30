@@ -52,7 +52,9 @@ function App() {
           <Route path='/month'>
             <Month comics={comics}/>
           </Route>
-          <Route path='/day/:Date'></Route>
+          <Route path='/month/:Date'>
+            <Day comics={comics}/>
+          </Route>
           <Route path='/about'>
             <About />
           </Route>
