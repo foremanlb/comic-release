@@ -6,7 +6,6 @@ import {useHistory} from 'react-router-dom'
 export default function Month(props) {
   const [value, onChange] = useState(new Date())
   const [day, setDay] = useState('')
-  const [dayFill, setDayFill] = useState('')
   let history = useHistory()
   const comics = props.comics
 
@@ -24,18 +23,15 @@ export default function Month(props) {
     }
   }
 
-  // function fillDay(date) {
-  //   console.log(date)
-  //   // const date = value.toISOString()
-  //   // setDayFill(date.slice(0, 10))
-  //   comics.map((comic) => {
-  //     if (comic.Date === dayFill) {
-  //       return <div>{comic.Title}</div>
-  //     } else {
-  //       return <></>
-  //     }
-  //   })
-  // }
+  function fillDay({ date, view }) {
+    const arr = []
+    comics.map((comic) => {
+        arr.push(comic.fields.Date)
+      })
+    if (arr.includes(date.toISOString().slice(0, 10)) === true && view === 'month')
+      return <p>Release Day</p>
+  }
+
 
   return (
     <div>
@@ -43,7 +39,7 @@ export default function Month(props) {
         onChange={onChange}
         value={value}
         onClickDay={clickDay}
-        // tileContent={fillDay(date)}
+        tileContent={fillDay}
       />
       <div>{day.slice(5)}</div>
       <button onClick={checkDay}>See Day</button>
