@@ -40,6 +40,7 @@ export default function Month(props) {
         value={value}
         onClickDay={clickDay}
         tileContent={fillDay}
+        calendarType='US'
       />
       <div>{day.slice(5)}</div>
       <button onClick={checkDay}>See Day</button>
