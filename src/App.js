@@ -38,7 +38,7 @@ function App() {
       <div>Loading...</div> :
       <>
         <div className="App">
-        <h1>Release the Comics!</h1>
+        <h1 id='title'>Release the Comics!</h1>
           <NavBar />
           <Route exact path='/'>
             <Home />
