@@ -18,18 +18,18 @@ export default function DC(props) {
         newArr.push(comic.fields.Title)
       }
       const unique = [...new Set(newArr)]
-      setTitles(unique)
+      setTitles(unique.sort())
     })
   }
   
   return (
-    <>
+    <ul>
       {titles.map((title) => {
         return (
           <Link to={`/comics/${title}`}>
-            <h4 key={title}>{title}</h4>
+            <li key={title}>{title}</li>
           </Link>)
       })}
-    </>
+    </ul>
   )
 }
