@@ -15,6 +15,7 @@ import Indie from './components/Indie'
 import Footer from './components/Footer'
 import Links from './components/Links'
 import Titles from './components/Titles'
+import Home from './components/Home'
 
 function App() {
   const [comics, setComics] = useState([])
@@ -39,7 +40,9 @@ function App() {
         <div className="App">
         <h1>Release the Comics!</h1>
           <NavBar />
-          <Route exact path='/'></Route>
+          <Route exact path='/'>
+            <Home />
+          </Route>
           <Route path='/marvel'>
             <Marvel comics={comics}/>
           </Route>
@@ -66,9 +69,6 @@ function App() {
           </Route>
           <Route path='/comics/:Title'>
             <Titles comics={comics} />
-          </Route>
-          <Route path='/comics/:id'>
-
           </Route>
         <Footer />
         </div>
