@@ -1,0 +1,21 @@
+.comicList {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 10px 0 10px 0;
+  padding: 0;
+}
+
+.comicItem {
+  text-decoration: none;
+  border: 1px solid black;
+  align-self: center;
+  margin: 25px;
+  height: 10vh;
+  align-content: center;
+  padding-top: 4vh;
+}
+
+.comicTitle {
+  text-align: center;
+}

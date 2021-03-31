@@ -5,7 +5,6 @@ import {baseURL, config} from './services/index'
 import axios from 'axios';
 import NavBar from './components/NavBar'
 import About from './components/About'
-import Contact from './components/Contact'
 import Day from './components/Day'
 import Form from './components/Form'
 import Month from './components/Month'

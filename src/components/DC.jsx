@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
+import './PublisherList.css'
 
 export default function DC(props) {
   const comics = props.comics
@@ -22,12 +23,15 @@ export default function DC(props) {
   }
   
   return (
-    <ul>
+    <ul className='comicList'>
       {titles.map((title) => {
         return (
-          <Link to={`/comics/${title}`}>
-            <li key={title}>{title}</li>
-          </Link>)
+          <div className='comicItem'>
+            <Link to={`/comics/${title}`}>
+              <li className='comicTitle'
+              key={title}>{title}</li>
+            </Link>
+          </div>)
       })}
     </ul>
   )
