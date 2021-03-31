@@ -41,7 +41,8 @@ function App() {
           <div className='pageTitle'>
           <h2 id='title'>Release the Comics!</h2>
           </div>
-          <NavBar id='nav'/>
+          <NavBar id='nav' />
+          <div style={{overflow:'auto'}}>
           <Route exact path='/'>
             <Home />
           </Route>
@@ -71,7 +72,8 @@ function App() {
           </Route>
           <Route path='/comics/:Title'>
             <Titles comics={comics} />
-          </Route>
+            </Route>
+            </div>
         <Footer />
         </div>
       </>

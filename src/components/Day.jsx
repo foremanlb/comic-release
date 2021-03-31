@@ -9,14 +9,14 @@ export default function Day(props) {
 
   return (
     <div>
-      <h3>Releases for {date.Date.slice(5)}</h3>
+      <h3 className='releaseDate'>Releases for {date.Date.slice(5)}</h3>
       {comics.map((comic) => {
         if (comic.fields.Date === date.Date) {
           const release = comic.fields.Date
           const newDate = release.split('-')
           console.log(newDate)
           return (
-            <div>
+            <div className='comicCard'>
               <h3>{comic.fields.Title}</h3>
               <h4>Issue # {comic.fields.Issue}</h4>
               <h4>{comic.fields.Publisher}</h4>
@@ -26,7 +26,7 @@ export default function Day(props) {
           )
         }
       })}
-      <h3>Try Another Day</h3>
+      <h3 className='tryAgain'>Try Another Day</h3>
     </div>
   )
 }
