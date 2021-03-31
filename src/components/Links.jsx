@@ -1,9 +1,9 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+import './Links.css'
 
 export default function Links() {
   return (
-    <div>
+    <div id='links'>
       <a
         href='https://www.dccomics.com/'
         target='_blank'
