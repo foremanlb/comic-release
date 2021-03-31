@@ -18,7 +18,7 @@ export default function Sort(props) {
         newArr.push(comic.fields.Title)
       }
       const unique = [...new Set(newArr)]
-      setTitles(unique)
+      setTitles(unique.sort())
       return null
     })
   }

@@ -19,6 +19,7 @@ import Home from './components/Home'
 function App() {
   const [comics, setComics] = useState([])
   const [isLoading, setIsLoading] = useState(true)
+  const [toggle, setToggle] = useState(true)
   
   useEffect(() => {
     getData()
@@ -63,7 +64,7 @@ function App() {
             <About />
           </Route>
           <Route path='/form'>
-            <Form comics={comics}/>
+            <Form comics={comics} setToggle={setToggle}/>
           </Route>
           <Route path='/links'>
             <Links />

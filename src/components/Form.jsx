@@ -67,11 +67,12 @@ export default function Form(props) {
     e.preventDefault()
     await axios.post(baseURL, { fields: newComic }, config)
     alert('Thank You for Submitting')
+    props.setToggle((prevState) => !prevState)
     history.push('/')
   }
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className='addForm'>
       <select
         onChange={(e) => {
           newSelect(e)
@@ -119,6 +120,7 @@ export default function Form(props) {
         }}
         inputPlaceholder="Select a day"
         name='Date'
+        calendarClassName='responsive-calendar'
         required
         />
       <textarea

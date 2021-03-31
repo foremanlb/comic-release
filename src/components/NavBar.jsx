@@ -7,19 +7,19 @@ export default function NavBar() {
     <div className='navDiv'>
       <ul className='nav'>
         <Link to='/' style={{ textDecoration: 'none' }}>
-          <li>Home</li>
+          <li className='navButton'>Home</li>
         </Link>
         <Link to='/marvel' style={{ textDecoration: 'none' }}>
-          <li>Marvel</li>
+          <li className='navButton'>Marvel</li>
         </Link>
         <Link to='/dc' style={{ textDecoration: 'none' }}>
-          <li>DC</li>
+          <li className='navButton'>DC</li>
         </Link>
         <Link to='/indie' style={{ textDecoration: 'none' }}>
-          <li>Indie</li>
+          <li className='navButton'>Indie</li>
         </Link>
         <Link to='/month' style={{ textDecoration: 'none' }}>
-          <li>Month</li>
+          <li className='navButton'>Month</li>
         </Link>
       </ul>
     </div>

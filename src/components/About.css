@@ -1,13 +1,10 @@
-.intro {
+.about {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #e2e2e2;
 }
 
-.introParagraph {
-  /* text-align: center; */
+.aboutParagraph {
   width: 50vw;
-  /* padding: 25px; */
-  /* justify-content: center; */
 }

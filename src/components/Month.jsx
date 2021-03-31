@@ -1,7 +1,9 @@
 import React from 'react'
 import Calendar from 'react-calendar'
 import { useState,} from 'react'
-import {useHistory} from 'react-router-dom'
+import { useHistory } from 'react-router-dom'
+import 'react-calendar/dist/Calendar.css'
+import './Month.css'
 
 export default function Month(props) {
   const [value, onChange] = useState(new Date())
@@ -34,7 +36,8 @@ export default function Month(props) {
 
 
   return (
-    <div>
+    <div className='monthDiv'>
+      <h3 className='calendarTitle'>Select Day To See Releases!</h3>
       <Calendar
         onChange={onChange}
         value={value}
@@ -42,8 +45,8 @@ export default function Month(props) {
         tileContent={fillDay}
         calendarType='US'
       />
-      <div>{day.slice(5)}</div>
-      <button onClick={checkDay}>See Day</button>
+      <div className='dayDisplay'>{day.slice(5)}</div>
+      <button onClick={checkDay} id='showDay'>See Day</button>
     </div>
   )
 }

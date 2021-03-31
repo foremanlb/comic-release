@@ -28,7 +28,8 @@ export default function DC(props) {
       {titles.map((title) => {
         return (
           <div className='comicItem'>
-            <Link to={`/comics/${title}`}>
+            <Link to={`/comics/${title}`}
+              className='comicLink'>
               <li className='comicTitle'
               key={title}>{title}</li>
             </Link>

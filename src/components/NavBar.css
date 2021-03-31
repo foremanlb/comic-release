@@ -7,13 +7,10 @@
 
 .navDiv {
   background-color: #0d00a4;
+  align-items: center;
 }
 
-li {
+.navButton {
   /* color: black; */
   color: #e2e2e2;
-}
-
-Link {
-  text-decoration: none;
 }

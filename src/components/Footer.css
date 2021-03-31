@@ -3,8 +3,10 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   background-color: #0d00a4;
   height: 5vh;
+  align-items: center;
 }
 
 .footerLink {
   color: #e2e2e2;
+  text-decoration: none;
 }

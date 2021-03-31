@@ -18,4 +18,9 @@
 .comicTitle {
   text-align: center;
   color: #0d00a4;
+  text-decoration: none;
+}
+
+.comicLink {
+  text-decoration: none;
 }

@@ -1,0 +1,21 @@
+.monthDiv {
+  display: grid;
+  justify-content: center;
+}
+
+#showDay {
+  width: 75px;
+  height: 30px;
+  justify-self: center;
+  grid-row: 8/ 9;
+  background-color: #0d00a4;
+  color: #e2e2e2;
+}
+
+.dayDisplay {
+  background-color: #e2e2e2;
+}
+
+.calendarTitle {
+  background-color: #e2e2e2;
+}
