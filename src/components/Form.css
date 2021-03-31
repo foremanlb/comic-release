@@ -1,0 +1,43 @@
+form {
+  display: grid;
+  grid-template-rows: 5vh 5vh 5vh 5vh 5vh 5vh 5vh 5vh;
+  grid-template-columns: 100vw;
+  justify-content: center;
+  align-content: space-around;
+  height: 70vh;
+}
+
+#publisher {
+  width: 25vw;
+  justify-self: center;
+  grid-row: 1 / 2;
+}
+#comicTitle {
+  width: 25vw;
+  justify-self: center;
+  grid-row: 2/ 3;
+}
+
+#hiddenTitle {
+  width: 24vw;
+  justify-self: center;
+}
+
+#issue {
+  width: 24vw;
+  justify-self: center;
+}
+
+#plot {
+  width: 40vw;
+  justify-self: center;
+  grid-row: 6/7;
+  height: 15vh;
+}
+
+#submit {
+  width: 75px;
+  height: 30px;
+  justify-self: center;
+  grid-row: 8/ 9;
+}

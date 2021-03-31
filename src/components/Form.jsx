@@ -5,7 +5,8 @@ import 'react-modern-calendar-datepicker/lib/DatePicker.css';
 import DatePicker from 'react-modern-calendar-datepicker';
 import axios from 'axios'
 import {baseURL, config} from '../services/index'
-import {useHistory} from 'react-router-dom'
+import { useHistory } from 'react-router-dom'
+import './Form.css'
 
 export default function Form(props) {
   const [selectedDay, setSelectedDay] = useState(null)
@@ -77,7 +78,9 @@ export default function Form(props) {
           handleChange(e)
         }}
         name='Publisher'
-        required>
+        required
+        id='publisher'
+        >
         <option value=''>Publisher</option>
         <option value='Marvel'>Marvel</option>
         <option value='DC'>DC</option>
@@ -88,7 +91,9 @@ export default function Form(props) {
         hiddenInput(e)
         handleChange(e)
       }} name='Title'
-        required>
+        required
+        id='comicTitle'
+      >
         <Sort comics={comics} publisher={publisher}/>
       </select>
       <input
@@ -96,13 +101,16 @@ export default function Form(props) {
         onChange={handleChange}
         hidden={hidden}
         name='Title'
-        required></input>
+        required
+        id='hiddenTitle'
+        placeholder='Title'></input>
       <input
         type='number'
         onChange={handleChangeNumber}
         placeholder='Issue'
         name='Issue'
-        required></input>
+        required
+        id='issue'></input>
       <DatePicker
         value={selectedDay}
         onChange={(e) => {
@@ -111,14 +119,17 @@ export default function Form(props) {
         }}
         inputPlaceholder="Select a day"
         name='Date'
-        required/>
+        required
+        />
       <textarea
         rows='10'
         cols='30'
         name='Plot'
         onChange={handleChange}
-        required></textarea>
-      <button type='submit'>Submit</button>
+        placeholder='Plot'
+        required
+        id='plot'></textarea>
+      <button type='submit' id='submit'>Submit</button>
     </form>
   )
 }
