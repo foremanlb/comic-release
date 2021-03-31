@@ -4,6 +4,9 @@
   grid-template-rows: 10vh 5vh 80vh 5vh;
   grid-template-columns: 100vw;
   justify-content: center;
+  background-image: url(./assets/background.jpeg);
+  background-size: cover;
+  background-position: center;
 }
 
 #title {

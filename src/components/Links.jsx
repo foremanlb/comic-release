@@ -17,7 +17,7 @@ export default function Links() {
         target='_blank'
         rel='noopener noreferrer'>Boom!</a>
       <a
-        href='https://www.boom-studios.com/wordpress/'
+        href='https://www.darkhorse.com/'
         target='_blank'
         rel='noopener noreferrer'>Dark Horse</a>
       <a
