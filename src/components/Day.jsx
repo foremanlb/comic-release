@@ -1,5 +1,6 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
+import './Day.css'
 
 
 export default function Day(props) {
@@ -8,8 +9,8 @@ export default function Day(props) {
   console.log(date)
 
   return (
-    <div>
-      <h3 className='releaseDate'>Releases for {date.Date.slice(5)}</h3>
+    <div className='dayList'>
+      <h3 className='dayItems'>Releases for {date.Date.slice(5)}</h3>
       {comics.map((comic) => {
         if (comic.fields.Date === date.Date) {
           const release = comic.fields.Date
@@ -26,7 +27,7 @@ export default function Day(props) {
           )
         }
       })}
-      <h3 className='tryAgain'>Try Another Day</h3>
+      <h3 className='dayItems'>Try Another Day</h3>
     </div>
   )
 }
