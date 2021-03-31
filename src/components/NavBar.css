@@ -6,11 +6,12 @@
 }
 
 .navDiv {
-  background-color: #0197f6;
+  background-color: #0d00a4;
 }
 
 li {
-  color: black;
+  /* color: black; */
+  color: #e2e2e2;
 }
 
 Link {

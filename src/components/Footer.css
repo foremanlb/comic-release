@@ -1,6 +1,10 @@
 .footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  background-color: #0197f6;
+  background-color: #0d00a4;
   height: 5vh;
+}
+
+.footerLink {
+  color: #e2e2e2;
 }

@@ -11,21 +11,25 @@ form {
   width: 25vw;
   justify-self: center;
   grid-row: 1 / 2;
+  background-color: #e8db7d;
 }
 #comicTitle {
   width: 25vw;
   justify-self: center;
   grid-row: 2/ 3;
+  background-color: #e8db7d;
 }
 
 #hiddenTitle {
   width: 24vw;
   justify-self: center;
+  background-color: #e8db7d;
 }
 
 #issue {
   width: 24vw;
   justify-self: center;
+  background-color: #e8db7d;
 }
 
 #plot {
@@ -33,6 +37,7 @@ form {
   justify-self: center;
   grid-row: 6/7;
   height: 15vh;
+  background-color: #e8db7d;
 }
 
 #submit {
@@ -40,4 +45,6 @@ form {
   height: 30px;
   justify-self: center;
   grid-row: 8/ 9;
+  background-color: #0d00a4;
+  color: #e2e2e2;
 }
