@@ -5,6 +5,10 @@
   padding: 0;
 }
 
+.navDiv {
+  background-color: #0197f6;
+}
+
 li {
   color: black;
 }

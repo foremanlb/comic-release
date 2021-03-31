@@ -16,3 +16,9 @@
 #nav {
   grid-row: 2/ 3s;
 }
+
+.pageTitle {
+  background-color: #222222;
+  height: 10vh;
+  color: #e2e2e2;
+}

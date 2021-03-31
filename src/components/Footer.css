@@ -1,4 +1,6 @@
 .footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  background-color: #0197f6;
+  height: 5vh;
 }
