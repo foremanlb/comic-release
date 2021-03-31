@@ -31,7 +31,7 @@ export default function Month(props) {
         arr.push(comic.fields.Date)
       })
     if (arr.includes(date.toISOString().slice(0, 10)) === true && view === 'month')
-      return <p>Release Day</p>
+      return <p className='tileFill'>Release Day</p>
   }
 
 

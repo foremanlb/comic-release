@@ -19,3 +19,10 @@
 .calendarTitle {
   background-color: #e2e2e2;
 }
+
+@media (max-width: 768px) {
+  .tileFill {
+    font-size: 8px;
+    margin: 0;
+  }
+}
