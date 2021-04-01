@@ -1,9 +1,11 @@
 .comicCard {
   background-color: #e2e2e2;
+  opacity: 0.9;
   width: 50vw;
   justify-items: center;
   margin: 25px 0 25px 0;
   padding: 15px;
+  border: 12px double #7b141b;
 }
 
 .dayList {

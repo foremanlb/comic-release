@@ -17,8 +17,8 @@ export default function NavBar() {
         <Link to='/indie' style={{ textDecoration: 'none' }}>
           <div className='navButton'>Indie</div>
         </Link>
-        <Link to='/month' style={{ textDecoration: 'none' }}>
-          <div className='navButton'>Month</div>
+        <Link to='/calendar' style={{ textDecoration: 'none' }}>
+          <div className='navButton'>Calendar</div>
         </Link>
     </div>
   )

@@ -7,7 +7,7 @@ import NavBar from './components/NavBar'
 import About from './components/About'
 import Day from './components/Day'
 import Form from './components/Form'
-import Month from './components/Month'
+import ReleaseCalendar from './components/ReleaseCalendar'
 import Marvel from './components/Marvel'
 import DC from './components/DC'
 import Indie from './components/Indie'
@@ -54,8 +54,8 @@ function App() {
           <Route path='/indie'>
             <Indie comics={comics}/>
           </Route>
-          <Route path='/month'>
-            <Month comics={comics}/>
+          <Route path='/calendar'>
+            <ReleaseCalendar comics={comics}/>
           </Route>
           <Route path='/month/:Date'>
             <Day comics={comics}/>

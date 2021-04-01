@@ -3,9 +3,9 @@ import Calendar from 'react-calendar'
 import { useState,} from 'react'
 import { useHistory } from 'react-router-dom'
 import 'react-calendar/dist/Calendar.css'
-import './Month.css'
+import './ReleaseCalendar.css'
 
-export default function Month(props) {
+export default function ReleaseCalendar(props) {
   const [value, onChange] = useState(new Date())
   const [day, setDay] = useState('')
   let history = useHistory()
