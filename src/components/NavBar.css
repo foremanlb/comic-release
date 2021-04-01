@@ -14,3 +14,12 @@
   /* color: black; */
   color: #e2e2e2;
 }
+
+@media (max-width: 768px) {
+  .navButton {
+    font-size: 12px;
+  }
+  .nav {
+    margin: 1vh;
+  }
+}
