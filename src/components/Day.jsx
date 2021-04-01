@@ -17,7 +17,7 @@ export default function Day(props) {
           const newDate = release.split('-')
           console.log(newDate)
           return (
-            <div className='comicCard'>
+            <div className='comicCard' key={comic.id}>
               <h3>{comic.fields.Title}</h3>
               <h4>Issue # {comic.fields.Issue}</h4>
               <h4>{comic.fields.Publisher}</h4>

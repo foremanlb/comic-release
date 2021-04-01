@@ -15,6 +15,7 @@ import Footer from './components/Footer'
 import Links from './components/Links'
 import Titles from './components/Titles'
 import Home from './components/Home'
+import './assets/fonts.css'
 
 function App() {
   const [comics, setComics] = useState([])
@@ -29,8 +30,6 @@ function App() {
     const resp = await axios.get(baseURL, config)
     setComics(resp.data.records)
     setIsLoading(false)
-    // console.log(resp.data.records)
-
   }
 
   return (

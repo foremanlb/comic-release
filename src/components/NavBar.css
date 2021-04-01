@@ -1,17 +1,12 @@
-.nav {
-  list-style-type: none;
+.navDiv {
+  background-color: #0d00a4;
+  align-items: center;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   padding: 0;
 }
 
-.navDiv {
-  background-color: #0d00a4;
-  align-items: center;
-}
-
 .navButton {
-  /* color: black; */
   color: #e2e2e2;
 }
 

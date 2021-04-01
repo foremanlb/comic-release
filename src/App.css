@@ -12,6 +12,9 @@
 
 #title {
   grid-row: 1/ 2;
+  font-family: "Bangers", cursive;
+  font-size: 69px;
+  margin: 0;
 }
 
 #nav {

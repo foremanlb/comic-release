@@ -5,23 +5,21 @@ import './NavBar.css'
 export default function NavBar() {
   return (
     <div className='navDiv'>
-      <ul className='nav'>
         <Link to='/' style={{ textDecoration: 'none' }}>
-          <li className='navButton'>Home</li>
+          <div className='navButton'>Home</div>
         </Link>
         <Link to='/marvel' style={{ textDecoration: 'none' }}>
-          <li className='navButton'>Marvel</li>
+          <div className='navButton'>Marvel</div>
         </Link>
         <Link to='/dc' style={{ textDecoration: 'none' }}>
-          <li className='navButton'>DC</li>
+          <div className='navButton'>DC</div>
         </Link>
         <Link to='/indie' style={{ textDecoration: 'none' }}>
-          <li className='navButton'>Indie</li>
+          <div className='navButton'>Indie</div>
         </Link>
         <Link to='/month' style={{ textDecoration: 'none' }}>
-          <li className='navButton'>Month</li>
+          <div className='navButton'>Month</div>
         </Link>
-      </ul>
     </div>
   )
 }

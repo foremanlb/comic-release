@@ -8,18 +8,19 @@
 
 .comicItem {
   text-decoration: none;
-  border: 1px solid black;
+  border: 10px double #0d00a4;
   margin: 25px;
   padding-top: 5vh;
   padding-bottom: 5vh;
-  background-color: #5fad41;
+  background-color: #a31621;
   opacity: 0.9;
 }
 
 .comicTitle {
   text-align: center;
-  color: #0d00a4;
+  color: #e2e2e2;
   text-decoration: none;
+  font-family: "Staatliches", cursive;
 }
 
 .comicLink {

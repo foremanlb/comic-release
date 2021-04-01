@@ -26,11 +26,11 @@ export default function DC(props) {
     <ul className='comicList'>
       {titles.map((title) => {
         return (
-          <div className='comicItem'>
+          <div className='comicItem' key={title}>
             <Link to={`/comics/${title}`}
               className='comicLink'>
               <li className='comicTitle'
-              key={title}>{title}</li>
+              >{title}</li>
             </Link>
           </div>
       )})}
