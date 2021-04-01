@@ -1,7 +1,6 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
-import './PublisherList.css'
+import ComicList from './ComicList'
 
 export default function DC(props) {
   const comics = props.comics
@@ -23,17 +22,6 @@ export default function DC(props) {
   }
   
   return (
-    <ul className='comicList'>
-      {titles.map((title) => {
-        return (
-          <div className='comicItem' key={title}>
-            <Link to={`/comics/${title}`}
-              className='comicLink' >
-              <li className='comicTitle'
-              >{title}</li>
-            </Link>
-          </div>)
-      })}
-    </ul>
+    <ComicList titles={titles} />
   )
 }

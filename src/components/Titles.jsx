@@ -15,7 +15,7 @@ export default function Titles(props) {
           const newDate = date.split('-')
           console.log(newDate)
           return (
-            <div className='titleCard'>
+            <div className='titleCard' key={comic.id}>
               <h3>{comic.fields.Title}</h3>
               <h4>Issue # {comic.fields.Issue}</h4>
               <h4>{comic.fields.Publisher}</h4>

@@ -104,7 +104,7 @@ export default function Form(props) {
         name='Title'
         required
         id='hiddenTitle'
-        placeholder='Title'></input>
+        placeholder='Title...replace / with \'></input>
       <input
         type='number'
         onChange={handleChangeNumber}
