@@ -26,3 +26,9 @@
   height: 10vh;
   color: #e2e2e2;
 }
+
+@media (max-width: 767px) {
+  #title {
+    font-size: 42px;
+  }
+}
