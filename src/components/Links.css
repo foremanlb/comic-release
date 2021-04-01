@@ -1,6 +1,6 @@
 #links {
   display: grid;
-  grid-template-rows: 10vh 10vh 10vh 10vh 10vh;
+  grid-template-rows: 15vh 15vh 15vh 15vh 15vh;
   justify-content: center;
   align-content: space-around;
 }
@@ -12,10 +12,11 @@
 
 .linkBox {
   align-self: center;
-  align-content: center;
+  /* align-content: center; */
   width: 20vw;
   padding: 3vh 0 3vh 0;
-  background-color: #e8db7d;
+  background-color: #7b141b;
+  border: 10px double #0d00a4;
 }
 
 @media (max-width: 767px) {
