@@ -12,7 +12,8 @@
   margin: 25px;
   padding-top: 5vh;
   padding-bottom: 5vh;
-  background-color: #60992d;
+  background-color: #5fad41;
+  opacity: 0.9;
 }
 
 .comicTitle {
@@ -23,4 +24,14 @@
 
 .comicLink {
   text-decoration: none;
+}
+
+@media (max-width: 767px) {
+  .comicTitle {
+    font-size: 10px;
+  }
+
+  .comicList {
+    grid-template-columns: 1fr 1fr;
+  }
 }

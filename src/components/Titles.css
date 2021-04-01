@@ -12,3 +12,14 @@
   flex-direction: column;
   align-items: center;
 }
+
+@media (max-width: 767px) {
+  .titleCard {
+    width: 80vw;
+    font-size: 10px;
+  }
+
+  .titleContainer {
+    width: 100vw;
+  }
+}

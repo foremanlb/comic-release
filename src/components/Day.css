@@ -11,9 +11,21 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 0 0 0;
 }
 
 .dayItems {
   background-color: #222222;
   color: #e2e2e2;
+}
+
+@media (max-width: 767px) {
+  .comicCard {
+    width: 80vw;
+    font-size: 10px;
+  }
+
+  .dayList {
+    width: 100vw;
+  }
 }
