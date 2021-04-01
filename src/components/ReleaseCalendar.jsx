@@ -21,7 +21,7 @@ export default function ReleaseCalendar(props) {
     if (day === '') {
       alert('Select Day First')
     } else {
-      history.push(`/month/${day}`)
+      history.push(`/calendar/${day}`)
     }
   }
 

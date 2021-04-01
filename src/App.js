@@ -24,7 +24,7 @@ function App() {
   
   useEffect(() => {
     getData()
-  }, [])
+  }, [toggle])
 
   async function getData() {
     const resp = await axios.get(baseURL, config)
@@ -57,7 +57,7 @@ function App() {
           <Route path='/calendar'>
             <ReleaseCalendar comics={comics}/>
           </Route>
-          <Route path='/month/:Date'>
+          <Route path='/calendar/:Date'>
             <Day comics={comics}/>
           </Route>
           <Route path='/about'>
