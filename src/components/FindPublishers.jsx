@@ -24,7 +24,7 @@ export default function Sort(props) {
     <>
       <option value=''>Publisher</option>
       {publishers.map((publisher) => {
-        return <option value={publisher}>{publisher}</option>
+        return <option value={publisher} key={publisher}>{publisher}</option>
       })}
       <option value='Other'>Other</option>
       </>

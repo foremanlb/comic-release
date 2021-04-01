@@ -11,33 +11,36 @@
   width: 25vw;
   justify-self: center;
   grid-row: 1 / 2;
-  background-color: #e8db7d;
+  background-color: #7b141b;
+  color: #e2e2e2;
 }
 
 #hiddenPublisher {
-  width: 25vw;
+  width: 24vw;
   justify-self: center;
-  /* grid-row: 2/ 3; */
-  background-color: #e8db7d;
+  background-color: #7b141b;
+  color: #e2e2e2;
 }
 
 #comicTitle {
   width: 25vw;
   justify-self: center;
-  /* grid-row: 3/ 4; */
-  background-color: #e8db7d;
+  background-color: #7b141b;
+  color: #e2e2e2;
 }
 
 #hiddenTitle {
   width: 24vw;
   justify-self: center;
-  background-color: #e8db7d;
+  background-color: #7b141b;
+  color: #e2e2e2;
 }
 
 #issue {
   width: 24vw;
   justify-self: center;
-  background-color: #e8db7d;
+  background-color: #7b141b;
+  color: #e2e2e2;
 }
 
 #plot {
@@ -45,7 +48,8 @@
   justify-self: center;
   grid-row: 7/8;
   height: 15vh;
-  background-color: #e8db7d;
+  background-color: #7b141b;
+  color: #e2e2e2;
 }
 
 #submit {

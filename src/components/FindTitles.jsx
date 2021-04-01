@@ -27,7 +27,7 @@ export default function FindTitles(props) {
     <>
       <option value=''>Title</option>
       {titles.map((title) => {
-        return <option value={title}>{title}</option>
+        return <option value={title} key={title}>{title}</option>
       })}
       <option value='Other'>Other</option>
       </>

@@ -27,6 +27,19 @@
   color: #e2e2e2;
 }
 
+::placeholder {
+  color: #e2e2e2;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: #e2e2e2;
+}
+
+::-ms-input-placeholder {
+  color: #e2e2e2;
+}
+
 @media (max-width: 767px) {
   #title {
     font-size: 42px;
