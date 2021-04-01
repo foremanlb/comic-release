@@ -1,18 +1,20 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
-import Sort from './Sort'
+import FindTitles from './FindTitles'
 import 'react-modern-calendar-datepicker/lib/DatePicker.css';
 import DatePicker from 'react-modern-calendar-datepicker';
 import axios from 'axios'
 import {baseURL, config} from '../services/index'
 import { useHistory } from 'react-router-dom'
 import './Form.css'
+import FindPublishers from './FindPublishers'
 
 export default function Form(props) {
   const [selectedDay, setSelectedDay] = useState(null)
   const [publisher, setPublisher] = useState('')
   const comics = props.comics
-  const [hidden, setHidden] = useState(true)
+  const [hiddenTitle, setHiddenTitle] = useState(true)
+  const [hiddenPublisher, setHiddenPublisher] = useState(true)
   const [newComic, setNewComic] = useState({
     Title: '',
     Plot: '',
@@ -35,11 +37,19 @@ export default function Form(props) {
     setPublisher((prevState) => e.target.value)
   }
 
-  function hiddenInput(e) {
+  function hiddenInputTitle(e) {
     if (e.target.value === 'Other') {
-      setHidden(false)
+      setHiddenTitle(false)
     } else {
-      setHidden(true)
+      setHiddenTitle(true)
+    }
+  }
+
+  function hiddenInputPublisher(e) {
+    if (e.target.value === 'Other') {
+      setHiddenPublisher(false)
+    } else {
+      setHiddenPublisher(true)
     }
   }
 
@@ -76,31 +86,36 @@ export default function Form(props) {
       <select
         onChange={(e) => {
           newSelect(e)
+          hiddenInputPublisher(e)
           handleChange(e)
         }}
         name='Publisher'
         required
         id='publisher'
-        >
-        <option value=''>Publisher</option>
-        <option value='Marvel'>Marvel</option>
-        <option value='DC'>DC</option>
-        <option value='Boom!'>Boom!</option>
-        <option value='Dark Horse'>Dark Horse</option>
+      >
+        <FindPublishers comics={comics} />
       </select>
+      <input
+        type='text'
+        onChange={handleChange}
+        hidden={hiddenPublisher}
+        name='Publisher'
+        required
+        id='hiddenPublisher'
+        placeholder='Publisher'></input>
       <select onChange={(e) => {
-        hiddenInput(e)
+        hiddenInputTitle(e)
         handleChange(e)
       }} name='Title'
         required
         id='comicTitle'
       >
-        <Sort comics={comics} publisher={publisher}/>
+        <FindTitles comics={comics} publisher={publisher}/>
       </select>
       <input
         type='text'
         onChange={handleChange}
-        hidden={hidden}
+        hidden={hiddenTitle}
         name='Title'
         required
         id='hiddenTitle'

@@ -12,7 +12,7 @@ export default function Month(props) {
   const comics = props.comics
 
 
-  function clickDay(value, event) {
+  function clickDay(value) {
     const date = value.toISOString()
     setDay(date.slice(0, 10))
   }

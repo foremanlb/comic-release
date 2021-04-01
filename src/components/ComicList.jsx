@@ -5,10 +5,9 @@ import './ComicList.css'
 
 
 export default function ComicList(props) {
-  const titles = props.titles
   return (
     <ul className='comicList'>
-      {titles.map((title) => {
+      {props.titles.map((title) => {
         return (
           <div className='comicItem' key={title}>
             <Link to={`/comics/${title}`}

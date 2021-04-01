@@ -1,6 +1,6 @@
 .addForm {
   display: grid;
-  grid-template-rows: 5vh 5vh 5vh 5vh 5vh 5vh 5vh 5vh;
+  grid-template-rows: 5vh 5vh 5vh 5vh 5vh 5vh 5vh 5vh 5vh;
   grid-template-columns: 100vw;
   justify-content: center;
   align-content: space-around;
@@ -13,10 +13,18 @@
   grid-row: 1 / 2;
   background-color: #e8db7d;
 }
+
+#hiddenPublisher {
+  width: 25vw;
+  justify-self: center;
+  /* grid-row: 2/ 3; */
+  background-color: #e8db7d;
+}
+
 #comicTitle {
   width: 25vw;
   justify-self: center;
-  grid-row: 2/ 3;
+  /* grid-row: 3/ 4; */
   background-color: #e8db7d;
 }
 
@@ -35,7 +43,7 @@
 #plot {
   width: 40vw;
   justify-self: center;
-  grid-row: 6/7;
+  grid-row: 7/8;
   height: 15vh;
   background-color: #e8db7d;
 }
@@ -44,7 +52,7 @@
   width: 75px;
   height: 30px;
   justify-self: center;
-  grid-row: 8/ 9;
+  grid-row: 9/ 10;
   background-color: #0d00a4;
   color: #e2e2e2;
 }

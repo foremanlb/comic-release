@@ -4,18 +4,15 @@ import './Day.css'
 
 
 export default function Day(props) {
-  const comics = props.comics
   const date = useParams()
-  console.log(date)
 
   return (
     <div className='dayList'>
       <h3 className='dayItems'>Releases for {date.Date.slice(5)}</h3>
-      {comics.map((comic) => {
+      {props.comics.map((comic) => {
         if (comic.fields.Date === date.Date) {
           const release = comic.fields.Date
           const newDate = release.split('-')
-          console.log(newDate)
           return (
             <div className='comicCard' key={comic.id}>
               <h3>{comic.fields.Title}</h3>

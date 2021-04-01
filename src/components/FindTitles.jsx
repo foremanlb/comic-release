@@ -2,9 +2,8 @@ import React from 'react'
 import { useState, useEffect } from 'react'
 
 
-export default function Sort(props) {
+export default function FindTitles(props) {
   const [titles, setTitles] = useState([])
-  const comics = props.comics
   const publisher = props.publisher
 
   useEffect(() => {
@@ -13,7 +12,7 @@ export default function Sort(props) {
 
   function getTitles() {
     const newArr = []
-    comics.map((comic) => {
+    props.comics.map((comic) => {
       if (comic.fields.Publisher === publisher) {
         newArr.push(comic.fields.Title)
       }
@@ -26,7 +25,7 @@ export default function Sort(props) {
 
   return (
     <>
-      <option value=''>Choose Title</option>
+      <option value=''>Title</option>
       {titles.map((title) => {
         return <option value={title}>{title}</option>
       })}
