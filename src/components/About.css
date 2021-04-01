@@ -9,3 +9,10 @@
 .aboutParagraph {
   width: 50vw;
 }
+
+@media (max-width: 767px) {
+  .about {
+    font-size: 10px;
+    margin-top: 15vh;
+  }
+}
