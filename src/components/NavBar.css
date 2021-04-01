@@ -15,7 +15,7 @@
   color: #e2e2e2;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .navButton {
     font-size: 12px;
   }

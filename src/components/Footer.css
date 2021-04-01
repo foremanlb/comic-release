@@ -10,3 +10,12 @@
   color: #e2e2e2;
   text-decoration: none;
 }
+
+@media (max-width: 767px) {
+  .footerLink {
+    font-size: 10px;
+  }
+  .footer {
+    height: 36px;
+  }
+}
