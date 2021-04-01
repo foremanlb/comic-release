@@ -9,6 +9,7 @@
 .footerLink {
   color: #e2e2e2;
   text-decoration: none;
+  font-family: "Audiowide", cursive;
 }
 
 @media (max-width: 767px) {
