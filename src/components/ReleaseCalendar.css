@@ -3,6 +3,7 @@
   grid-template-columns: 100vw;
   justify-items: center;
   align-content: center;
+  height: 80vh;
 }
 
 #showDay {
@@ -17,6 +18,7 @@
 
 .dayDisplay {
   background-color: #e2e2e2;
+  width: 50vw;
 }
 
 .calendarTitle {
