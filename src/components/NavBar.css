@@ -8,6 +8,7 @@
 
 .navButton {
   color: #e2e2e2;
+  font-family: "Audiowide", cursive;
 }
 
 @media (max-width: 767px) {
