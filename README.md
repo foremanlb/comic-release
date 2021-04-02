@@ -76,30 +76,30 @@ Sample:
 
 | Day       | Deliverable                       | Status |
 | --------- | --------------------------------- | ------ |
-| Mar 26    | Proposal Approval/ Airtable Setup |        |
-| Mar 27-28 | Airtable Setup                    |        |
-| Mar 29    | Frame Components/Set Up Axios'    |        |
-| Mar 30    | Link/Route tests/Finish Renders   |        |
-| Mar 31    | Basic CSS/MVP testing             |        |
-| Apr 1     | Extensive CSS/@Medias             |        |
+| Mar 26    | Proposal Approval/ Airtable Setup | √      |
+| Mar 27-28 | Airtable Setup                    | √      |
+| Mar 29    | Frame Components/Set Up Axios'    | √      |
+| Mar 30    | Link/Route tests/Finish Renders   | √      |
+| Mar 31    | Basic CSS/MVP testing             | √      |
+| Apr 1     | Extensive CSS/@Medias             | √      |
 | Apr 2     | Presentations                     |        |
 
 ## Timeframes
 
 | Component               | Priority | Estimated Time | Time Invested | Actual Time |
 | ----------------------- | :------: | :------------: | :-----------: | :---------: |
-| Proposal                |    H     |     .25hrs     |               |             |
-| Airtable setup          |    H     |     16hrs      |               |             |
-| Frame Components        |    M     |      2hrs      |               |             |
-| Test Axios Calls        |    H     |      3hrs      |               |             |
-| Setup/Test Links        |    H     |      5hrs      |               |             |
-| Setup Component Renders |    H     |      3hrs      |               |             |
-| Initial CSS             |    M     |      4hrs      |               |             |
-| Test/Debug              |    H     |      3hrs      |               |             |
-| Extend CSS              |    H     |      4hrs      |               |             |
-| @Media Queries          |    H     |      5hrs      |               |             |
-| Refactoring             |    H     |      3hrs      |               |             |
-| Total                   |    H     |     48hrs      |               |             |
+| Proposal                |    H     |     .25hrs     |    .25hrs     |   .25hrs    |
+| Airtable setup          |    H     |     16hrs      |     3hrs      |    3hrs     |
+| Frame Components        |    M     |      2hrs      |     5hrs      |    5hrs     |
+| Test Axios Calls        |    H     |      3hrs      |     2hrs      |    2hrs     |
+| Setup/Test Links        |    H     |      5hrs      |     8hrs      |    8hrs     |
+| Setup Component Renders |    H     |      3hrs      |     6hrs      |    6hrs     |
+| Initial CSS             |    M     |      4hrs      |     5hrs      |    5hrs     |
+| Test/Debug              |    H     |      3hrs      |     2hrs      |    2hrs     |
+| Extend CSS              |    H     |      4hrs      |     4hrs      |    4hrs     |
+| @Media Queries          |    H     |      5hrs      |     2hrs      |    2hrs     |
+| Refactoring             |    H     |      3hrs      |     2hrs      |    2hrs     |
+| Total                   |    H     |     48hrs      |   39.25hrs    |  39.25hrs   |
 
 ## SWOT Analysis
 
