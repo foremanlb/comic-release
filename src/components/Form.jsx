@@ -99,7 +99,7 @@ export default function Form(props) {
         type='text'
         onChange={handleChange}
         hidden={hiddenPublisher}
-        name='Publisher'
+        name='HiddenPublisher'
         required
         id='hiddenPublisher'
         placeholder='Publisher'></input>
@@ -116,7 +116,7 @@ export default function Form(props) {
         type='text'
         onChange={handleChange}
         hidden={hiddenTitle}
-        name='Title'
+        name='HiddenTitle'
         required
         id='hiddenTitle'
         placeholder='Title...replace / with \'></input>
