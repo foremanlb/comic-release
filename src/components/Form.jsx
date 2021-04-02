@@ -82,7 +82,7 @@ export default function Form(props) {
   }
 
   return (
-    <form onSubmit={handleSubmit} className='addForm'>
+    <form onSubmit={handleSubmit} className='addForm' noValidate>
       <select
         onChange={(e) => {
           newSelect(e)
