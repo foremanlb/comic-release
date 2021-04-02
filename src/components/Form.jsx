@@ -100,7 +100,6 @@ export default function Form(props) {
         onChange={handleChange}
         hidden={hiddenPublisher}
         name='HiddenPublisher'
-        required
         id='hiddenPublisher'
         placeholder='Publisher'></input>
       <select onChange={(e) => {
@@ -117,7 +116,6 @@ export default function Form(props) {
         onChange={handleChange}
         hidden={hiddenTitle}
         name='HiddenTitle'
-        required
         id='hiddenTitle'
         placeholder='Title...replace / with \'></input>
       <input
